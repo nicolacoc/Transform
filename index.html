@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        :root{
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after{
+            box-sizing: inherit;
+        }
+
+        body{
+            background-color: blue;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .container{
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card{
+            padding: .5em;
+            max-width: 15em;
+            background-color: white;
+            margin-right: 10px;
+            box-shadow: 5px 10px 25px -16px;
+        }
+
+        .card img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        /*TRANSFORM*/
+
+        .container .card:hover{
+            animation-name: animate-card-example;
+            animation-duration: 1s;
+            cursor: pointer;
+        }
+
+        @keyframes animate-card-example {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            25%{
+                transform: rotate(-10deg);
+            }
+
+
+            75%{
+                transform: rotate(10deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <img src="AdobeStock_476112891_Preview.jpeg" alt="Dog">
+        <h4>Some title..</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam metus, tempus id nisl ac, dignissim
+            dignissim quam. Etiam ac dapibus sapien. Phasellus volutpat non ex a mattis. Nunc posuere nunc ac turpis
+            iaculis porta. In hac habitasse platea dictumst. Donec viverra magna eget varius posuere. Pellentesque
+            tempus malesuada magna, vel semper orci venenatis semper.
+        </p>
+    </div>
+    <div class="card">
+        <img src="AdobeStock_476112891_Preview.jpeg" alt="Dog">
+        <h4>Some title..</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam metus, tempus id nisl ac, dignissim
+            dignissim quam. Etiam ac dapibus sapien. Phasellus volutpat non ex a mattis. Nunc posuere nunc ac turpis
+            iaculis porta. In hac habitasse platea dictumst. Donec viverra magna eget varius posuere. Pellentesque
+            tempus malesuada magna, vel semper orci venenatis semper.
+        </p>
+    </div>
+    <div class="card">
+        <img src="AdobeStock_476112891_Preview.jpeg" alt="Dog">
+        <h4>Some title..</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam metus, tempus id nisl ac, dignissim
+            dignissim quam. Etiam ac dapibus sapien. Phasellus volutpat non ex a mattis. Nunc posuere nunc ac turpis
+            iaculis porta. In hac habitasse platea dictumst. Donec viverra magna eget varius posuere. Pellentesque
+            tempus malesuada magna, vel semper orci venenatis semper.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
